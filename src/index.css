@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  margin: 0;
+  color: #f7fafc; /* text-gray-100 */
+  letter-spacing: -0.015em; /* tracking-tight */
+  background: radial-gradient(
+    ellipse at 80% 0%,
+    #2e3a8c 0%,
+    #151a2e 60%,
+    #101624 100%
+  );
+}
