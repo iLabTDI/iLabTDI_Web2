@@ -6,7 +6,10 @@ export default function Hero() {
   const navigate = useNavigate();
 
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-[60vh] text-center overflow-hidden -mb-20">
+    <section
+      id="inicio" // <-- Agrega este id
+      className="relative flex flex-col items-center justify-center min-h-[60vh] text-center overflow-hidden -mb-20 pt-0 lg:pt-32"
+    >
       {/* Particles background */}
       <Particles className="absolute inset-0 w-full h-full z-0 pointer-events-none" />
 

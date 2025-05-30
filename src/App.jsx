@@ -1,16 +1,14 @@
 import React from "react";
-import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
-import Carrusel_Logos from "./components/Carrusel_Logos";
-import Services from "./components/Services";
+import { Routes, Route } from "react-router-dom";
+import CardsMain from "./components/CardsMain";
+import MainPrototipado from "./pages/prototipado/MainPrototipado";
 
 export default function App() {
   return (
-    <div>
-      <NavBar />
-      <Hero />
-      <Carrusel_Logos />
-      <Services />
-    </div>
+    <Routes>
+      <Route path="/" element={<CardsMain />} />
+      <Route path="/prototipado" element={<MainPrototipado />} />
+      {/* Otras rutas */}
+    </Routes>
   );
 }

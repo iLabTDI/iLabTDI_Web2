@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Home, MapPin, Info, FileText, Settings2, X, Menu } from "lucide-react";
-import logo from "../assets/Circulo.png";
+import {
+  Home,
+  MapPin,
+  Info,
+  FileText,
+  Settings2,
+  X,
+  Menu,
+  Send,
+} from "lucide-react";
+import logo from "../../../../assets/Circulo.png";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,11 +19,11 @@ function NavBar() {
 
   const handleScrollToSection = (sectionId) => {
     setIsMenuOpen(false);
-    if (location.pathname === "/") {
+    if (location.pathname === "/prototipado") {
       const section = document.getElementById(sectionId);
       if (section) section.scrollIntoView({ behavior: "smooth" });
     } else {
-      navigate("/");
+      navigate("/prototipado");
       setTimeout(() => {
         const section = document.getElementById(sectionId);
         if (section) section.scrollIntoView({ behavior: "smooth" });
@@ -36,16 +45,19 @@ function NavBar() {
       <div className="relative z-10 max-w-7xl mx-auto flex items-center justify-between px-4 md:px-10 h-20">
         {/* Logo a la izquierda */}
         <Link
-          to="/"
-          className="flex items-center gap-3"
+          to="#"
+          className="flex items-center gap-3 cursor-pointer"
           aria-label="Ir al inicio"
+          onClick={(e) => {
+            e.preventDefault();
+            handleScrollToSection("inicio");
+          }}
         >
           <img
             src={logo}
             alt="Logo Prototyping Lab"
             className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg shadow-lg"
           />
-          {/* El span ahora siempre visible y responsivo */}
           <span className="text-base sm:text-xl font-bold text-white tracking-wide block">
             Prototyping Lab
           </span>
@@ -58,7 +70,6 @@ function NavBar() {
             <button
               type="button"
               className="flex items-center gap-2 text-white hover:text-[#a78bfa] transition-colors text-lg font-medium"
-              style={{ fontFamily: "system-ui, -apple-system" }}
               onClick={() => handleScrollToSection("inicio")}
             >
               <Home className="w-6 h-6 text-[#5ee6ff]" />
@@ -67,25 +78,23 @@ function NavBar() {
             <button
               type="button"
               className="flex items-center gap-2 text-white hover:text-[#a78bfa] transition-colors text-lg font-medium"
-              style={{ fontFamily: "system-ui, -apple-system" }}
               onClick={() => handleScrollToSection("Servicios")}
             >
               <Settings2 className="w-6 h-6 text-[#5ee6ff]" />
               Servicios
             </button>
+
             <button
               type="button"
               className="flex items-center gap-2 text-white hover:text-[#a78bfa] transition-colors text-lg font-medium"
-              style={{ fontFamily: "system-ui, -apple-system" }}
-              onClick={() => handleScrollToSection("Galeria")}
+              onClick={() => handleScrollToSection("Solicitar")}
             >
-              <Info className="w-6 h-6 text-[#5ee6ff]" />
-              Maquinaria
+              <Send className="w-6 h-6 text-[#5ee6ff]" />
+              Solicitar
             </button>
             <button
               type="button"
               className="flex items-center gap-2 text-white hover:text-[#a78bfa] transition-colors text-lg font-medium"
-              style={{ fontFamily: "system-ui, -apple-system" }}
               onClick={() => handleScrollToSection("Ubicacion")}
             >
               <MapPin className="w-6 h-6 text-[#5ee6ff]" />
@@ -97,7 +106,6 @@ function NavBar() {
           <Link
             to="/documentos"
             className="hidden md:inline-flex items-center bg-gradient-to-r from-[#a78bfa] to-[#ff5ca9] hover:from-[#5ca9fb] hover:to-[#a78bfa] text-white font-bold px-7 py-2 rounded-full shadow-lg transition-all duration-200"
-            style={{ fontFamily: "system-ui, -apple-system" }}
           >
             <FileText className="mr-2 w-6 h-6 text-white" />
             Documentos
@@ -160,6 +168,17 @@ function NavBar() {
           >
             <Info className="w-6 h-6 text-[#5ee6ff]" />
             Maquinaria
+          </button>
+          <button
+            type="button"
+            className="flex items-center gap-3 bg-[#23213a] rounded-xl px-4 py-3 text-white text-lg font-medium hover:bg-[#a78bfa]/20 transition"
+            onClick={() => {
+              handleScrollToSection("Solicitar");
+              setIsMenuOpen(false);
+            }}
+          >
+            <Send className="w-6 h-6 text-[#5ee6ff]" />
+            Solicitar
           </button>
           <button
             type="button"

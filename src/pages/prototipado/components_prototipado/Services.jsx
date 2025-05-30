@@ -4,7 +4,7 @@ import { CircuitBoard } from "lucide-react";
 
 export default function Services() {
   return (
-    <section>
+    <section id="Servicios">
       <div
         className="relative max-w-6xl mx-auto px-4 sm:px-6"
         style={{
@@ -16,7 +16,7 @@ export default function Services() {
           <div className="w-full h-full rounded-full bg-gradient-to-br from-blue-400/40 via-blue-600/30 to-indigo-900/60 blur-[60px] sm:blur-[100px] md:blur-[120px] opacity-80"></div>
         </div>
 
-        <div className="pt-10 pb-8 sm:pt-16 sm:pb-12 md:pt-40 md:pb-20">
+        <div className="pt-4 pb-4 sm:pt-8 sm:pb-8 md:pt-16 md:pb-12">
           <div className="max-w-xl mx-auto md:max-w-none flex flex-col md:flex-row md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-8 md:space-y-0">
             {/* Content */}
             <div className="w-full md:w-7/12 lg:w-1/2 order-1 md:order-none text-center md:text-left">
@@ -25,12 +25,13 @@ export default function Services() {
               </h2>
               <p className="text-base sm:text-lg text-slate-400 mb-8">
                 Ofrecemos servicios de diseño de placas fenolicas (PCB) de alta
-                calidad
+                calidad, contamos con dos maquinas potentes para realizar los
+                trabajos que son la LPKF ProtoMat S103 y la Fresadora VF3KM400
               </p>
             </div>
             {/* Visual/Ilustración/Animación */}
             <div className="w-full md:w-5/12 lg:w-1/2 flex items-center justify-center">
-              <div className="relative py-10 sm:py-20 md:py-24 -mt-2 sm:-mt-12 w-full flex justify-center items-center">
+              <div className="relative py-4 sm:py-12 md:py-16 -mt-2 sm:-mt-8 w-full flex justify-center items-center">
                 {/* Partículas decorativas */}
                 <Particles
                   className="absolute inset-0 -z-10"
