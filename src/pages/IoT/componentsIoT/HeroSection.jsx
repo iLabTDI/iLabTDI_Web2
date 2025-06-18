@@ -1,4 +1,13 @@
-import { ArrowRight, Zap, Wifi, BarChart3, Shield, Cpu, Database, Play } from "lucide-react"
+import {
+  ArrowRight,
+  Zap,
+  Wifi,
+  BarChart3,
+  Shield,
+  Cpu,
+  Database,
+  Play,
+} from "lucide-react";
 
 function HeroSection() {
   const floatingCards = [
@@ -23,16 +32,23 @@ function HeroSection() {
       color: "from-purple-500 to-pink-500",
       position: "top-1/2 right-4",
     },
-  ]
+  ];
 
   const stats = [
-    { number: "4+", label: "Titulados", icon: <Database className="w-5 h-5" /> },
+    {
+      number: "4+",
+      label: "Titulados",
+      icon: <Database className="w-5 h-5" />,
+    },
     { number: "2", label: "Patentes", icon: <Shield className="w-5 h-5" /> },
     { number: "5+", label: "Proyectos", icon: <Cpu className="w-5 h-5" /> },
-  ]
+  ];
 
   return (
-    <section className="relative min-h-screen flex items-center py-20 px-4 overflow-hidden">
+    <section
+      id="hero-iot"
+      className="relative min-h-screen flex items-center py-20 px-4 overflow-hidden"
+    >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50"></div>
 
@@ -56,7 +72,9 @@ function HeroSection() {
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500">
                   futuro
                 </span>
-                <span className="text-4xl lg:text-5xl text-gray-700">un dispositivo a la vez</span>
+                <span className="text-4xl lg:text-5xl text-gray-700">
+                  un dispositivo a la vez
+                </span>
               </h1>
             </div>
 
@@ -65,7 +83,10 @@ function HeroSection() {
                 Nuevo laboratorio de Internet de las Cosas manejado por{" "}
                 <span className="font-semibold text-blue-600">iLabTDI</span>.
               </p>
-              <p>Descubre y conoce todos los servicios que manejamos para impulsar la innovación tecnológica.</p>
+              <p>
+                Descubre y conoce todos los servicios que manejamos para
+                impulsar la innovación tecnológica.
+              </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -86,8 +107,12 @@ function HeroSection() {
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-100 to-cyan-100 text-blue-600 rounded-xl mb-3 group-hover:scale-110 transition-transform duration-200">
                     {stat.icon}
                   </div>
-                  <div className="text-3xl font-bold text-gray-900 mb-1">{stat.number}</div>
-                  <div className="text-gray-600 text-sm font-medium">{stat.label}</div>
+                  <div className="text-3xl font-bold text-gray-900 mb-1">
+                    {stat.number}
+                  </div>
+                  <div className="text-gray-600 text-sm font-medium">
+                    {stat.label}
+                  </div>
                 </div>
               ))}
             </div>
@@ -104,17 +129,23 @@ function HeroSection() {
                     <Cpu className="w-10 h-10 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Laboratorio IoT</h3>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      Laboratorio IoT
+                    </h3>
                     <p className="text-gray-600">Tecnología del futuro</p>
                   </div>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div className="p-4 bg-blue-50 rounded-xl">
                       <Database className="w-6 h-6 text-blue-600 mx-auto mb-2" />
-                      <div className="text-sm font-medium text-gray-900">Sensores</div>
+                      <div className="text-sm font-medium text-gray-900">
+                        Sensores
+                      </div>
                     </div>
                     <div className="p-4 bg-cyan-50 rounded-xl">
                       <Wifi className="w-6 h-6 text-cyan-600 mx-auto mb-2" />
-                      <div className="text-sm font-medium text-gray-900">Conectividad</div>
+                      <div className="text-sm font-medium text-gray-900">
+                        Conectividad
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -136,8 +167,12 @@ function HeroSection() {
                       {card.icon}
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-gray-900">{card.title}</div>
-                      <div className="text-xs text-gray-600">{card.subtitle}</div>
+                      <div className="text-sm font-semibold text-gray-900">
+                        {card.title}
+                      </div>
+                      <div className="text-xs text-gray-600">
+                        {card.subtitle}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -147,7 +182,7 @@ function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default HeroSection
+export default HeroSection;
