@@ -1,6 +1,7 @@
 import React from "react";
 import Particles from "./Particles";
 import { CircuitBoard } from "lucide-react";
+import BG from "../../../assets/Bg.svg";
 
 export default function Services() {
   return (

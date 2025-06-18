@@ -43,7 +43,7 @@ export default function Ubicacion() {
               Guadalajara, Jal.
             </span>
             <a
-              href="https://maps.google.com/?q=Blvd. Gral. Marcelino García Barragán, Olímpica, 44840 Guadalajara, Jal."
+              href="https://maps.google.com/?q=Blvd. Gral. Marcelino García Barragán 1421, Olímpica, 44840 Guadalajara, Jal."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-2 sm:mt-0 px-4 py-2 rounded-full bg-[#5ca9fb]/10 text-[#5ca9fb] font-semibold hover:bg-[#5ca9fb]/20 transition text-center"

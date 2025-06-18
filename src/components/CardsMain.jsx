@@ -6,14 +6,14 @@ import videoFondo from "../assets/Fondo_video.mp4";
 const cards = [
   {
     img: "/ImagesHome/Logo_blanco_con_letras.PNG",
-    to: "/home=iLabTDI",
+    to: "/iLabTDI",
     alt: "Logo iLabTDI",
     title: "iLabTDI",
     description: "",
   },
   {
     img: "/ImagesHome/Prototyping_lab_Letras.PNG",
-    to: "/prototipado",
+    to: "/Prototipado",
     alt: "Prototyping Lab",
     title: "Prototyping Lab",
     description: "",

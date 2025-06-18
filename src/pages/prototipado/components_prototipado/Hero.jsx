@@ -44,7 +44,10 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-4">
           <button
             className="btn-sm text-slate-900 bg-gradient-to-r from-white/80 via-white to-white/80 hover:bg-white transition duration-150 ease-in-out group font-bold rounded-full shadow-lg text-base px-6 py-2 flex items-center"
-            onClick={() => navigate("/servicios")}
+            onClick={() => {
+              const section = document.getElementById("Servicios");
+              if (section) section.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Explorar Servicios
             <span className="text-[#a78bfa] group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
@@ -53,7 +56,10 @@ export default function Hero() {
           </button>
           <button
             className="btn-sm text-slate-200 hover:text-white bg-slate-900/25 hover:bg-slate-900/30 transition duration-150 ease-in-out font-bold rounded-full border-2 border-[#5ca9fb] text-[#5ca9fb] hover:bg-[#5ca9fb] hover:text-white shadow-lg text-base px-6 py-2 flex items-center"
-            onClick={() => navigate("/solicitar")}
+            onClick={() => {
+              const section = document.getElementById("Solicitar");
+              if (section) section.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             <svg
               className="shrink-0 fill-slate-300 mr-2"

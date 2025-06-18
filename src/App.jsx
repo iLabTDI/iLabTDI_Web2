@@ -2,12 +2,14 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import CardsMain from "./components/CardsMain";
 import MainPrototipado from "./pages/prototipado/MainPrototipado";
+import MainiLabTDI from "./pages/iLabTDI/MainiLabTDI";
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<CardsMain />} />
-      <Route path="/prototipado" element={<MainPrototipado />} />
+      <Route path="/Prototipado" element={<MainPrototipado />} />
+      <Route path="/iLabTDI" element={<MainiLabTDI />} />
       {/* Otras rutas */}
     </Routes>
   );

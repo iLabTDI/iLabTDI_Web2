@@ -14,6 +14,7 @@ import {
   ScrollText,
   Send,
 } from "lucide-react";
+import { Facebook } from "lucide-react"; // Agrega esta línea
 import logo from "../../../../assets/Circulo.png";
 
 export default function Footer() {
@@ -55,7 +56,9 @@ export default function Footer() {
                 <li>
                   <a
                     className="flex justify-center items-center text-[#5ca9fb] hover:text-[#a78bfa] transition duration-150 ease-in-out"
-                    href="mailto:prototyping.lab@correo.com"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=hector.galvez5325@academicos.udg.mx"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="Correo"
                   >
                     <Mail className="w-8 h-8" />
@@ -64,14 +67,15 @@ export default function Footer() {
                 <li className="ml-2">
                   <a
                     className="flex justify-center items-center text-[#5ca9fb] hover:text-[#a78bfa] transition duration-150 ease-in-out"
-                    href="https://github.com/"
+                    href="https://www.facebook.com/ILabTDI"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Github"
+                    aria-label="Facebook"
                   >
-                    <Github className="w-8 h-8" />
+                    <Facebook className="w-8 h-8" />
                   </a>
                 </li>
+                
               </ul>
             </div>
           </div>
@@ -143,7 +147,7 @@ export default function Footer() {
               <li>
                 <a
                   className="flex items-center gap-1 text-slate-400 hover:text-slate-200 transition"
-                  href="https://t.me/tu_usuario_telegram"
+                  href="https://t.me/+JhwB-s6Jzl05NDQ5"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -151,17 +155,7 @@ export default function Footer() {
                   Telegram
                 </a>
               </li>
-              <li>
-                <a
-                  className="flex items-center gap-1 text-slate-400 hover:text-slate-200 transition"
-                  href="https://t.me/tu_usuario_telegram"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Users className="w-4 h-4 text-[#5ca9fb]" />
-                  Comunidad
-                </a>
-              </li>
+
               <li>
                 <a
                   className="flex items-center gap-1 text-slate-400 hover:text-slate-200 transition"
@@ -172,15 +166,7 @@ export default function Footer() {
                   Descargar formato
                 </a>
               </li>
-              <li>
-                <Link
-                  to="/documentos"
-                  className="flex items-center gap-1 text-slate-400 hover:text-slate-200 transition"
-                >
-                  <FileText className="w-4 h-4 text-[#a78bfa]" />
-                  Documentos
-                </Link>
-              </li>
+              
             </ul>
           </div>
 

@@ -232,7 +232,7 @@ export default function Solicitar() {
         {/* Botones de acción */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 mb-8">
           <a
-            href="https://t.me/tu_usuario_telegram"
+            href="https://t.me/+JhwB-s6Jzl05NDQ5"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-sm font-bold rounded-full shadow-lg text-base px-6 py-2 flex items-center transition duration-150 ease-in-out
