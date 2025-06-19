@@ -1,20 +1,21 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Particles from "./Particles";
+import logo from "../../../assets/iLabTDI.png"; // Ajusta la ruta si es necesario
 
 export default function Hero() {
   const navigate = useNavigate();
 
   return (
     <section
-      id="inicio" // <-- Agrega este id
+      id="inicio"
       className="relative flex flex-col items-center justify-center min-h-[60vh] text-center overflow-hidden -mb-20 pt-0 lg:pt-32"
     >
       {/* Particles background */}
       <Particles className="absolute inset-0 w-full h-full z-0 pointer-events-none" />
 
       {/* Powered by iLabTDI badge */}
-      <div className="mb-6">
+      <div className="mb-6 pt-8 sm:pt-0">
         <div className="inline-flex relative before:absolute before:inset-0 before:bg-[#a78bfa]/40 before:blur-md">
           <button
             className="btn-sm px-6 py-2 text-slate-300 hover:text-white bg-[#232946]/60 border-2 border-[#a78bfa] rounded-full relative shadow-md group transition duration-150 ease-in-out ring-2 ring-[#a78bfa]/30"
@@ -22,9 +23,12 @@ export default function Hero() {
           >
             <span className="relative inline-flex items-center font-bold tracking-widest uppercase">
               Powered by iLabTDI
-              <span className="tracking-normal text-[#a78bfa] group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
-                &rarr;
-              </span>
+              <img
+                src={logo}
+                alt="iLabTDI Logo"
+                className="ml-2 w-7 h-7 object-contain"
+                style={{ display: "inline-block" }}
+              />
             </span>
           </button>
         </div>

@@ -2,14 +2,14 @@ import React, { useState } from "react";
 
 const imagenes = [
   {
-    src: "./ImagesPrototipado/ProtoMat.jpg",
+    src: "./ImagesPrototipado/ProtoMat.webp",
     alt: "LPKF ProtoMat S103",
     titulo: "LPKF ProtoMat S103",
     descripcion:
       "Es un trazador de placas de circuito de alta precisión, ideal para prototipos PCB y pequeños lotes. Con una resolución de 0.5μm (0.02 mil), motor de 100,000 RPM y velocidad de desplazamiento de 150 mm/s, garantiza precisión en perforación y desbaste de estructuras finas, especialmente para aplicaciones de RF y microondas.",
   },
   {
-    src: "./ImagesPrototipado/Fresadora.jpg",
+    src: "./ImagesPrototipado/Fresadora.webp",
     alt: "Fresadora VF3KM400",
     titulo: "Fresadora VF3KM400",
     descripcion:
